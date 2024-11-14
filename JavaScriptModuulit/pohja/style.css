@@ -140,7 +140,6 @@ section {
 .home img {
   width: 90%;
   height: 30rem;
-  filter: grayscale(100%);
   object-fit: cover;
   border-radius: 5%;
   mask-image: linear-gradient(
@@ -150,7 +149,6 @@ section {
     black 75%,
     transparent
   );
-  animation: goldFilter 5s infinite ease-in-out;
 }
 
 /* Tuotteet */
@@ -206,17 +204,5 @@ section {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@keyframes goldFilter {
-  0% {
-    filter: grayscale(0%);
-  }
-  50% {
-    filter: grayscale(100%);
-  }
-  100% {
-    filter: grayscale(0%);
   }
 }
